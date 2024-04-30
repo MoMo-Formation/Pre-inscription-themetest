@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Préinscription</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSMCKGPP7T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DSMCKGPP7T');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W5KNTG4G');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    /* Réinitialisation des styles par défaut */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style du corps de la page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* Couleur de fond */
+    }
+
+    /* Style du conteneur principal */
+    .container {
+      max-width: 600px; /* Largeur maximale du conteneur */
+      margin: 50px auto; /* Marge extérieure pour centrer le conteneur */
+      padding: 20px;
+      background-color: #fff; /* Couleur de fond du conteneur */
+      border-radius: 10px; /* Coins arrondis */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    }
+
+    /* Style du titre principal */
+    h1 {
+      text-align: center; /* Centrage du texte */
+      margin-bottom: 20px; /* Marge basse pour séparer du formulaire */
+      font-weight: bold; /* Texte en gras */
+      display: flex; /* Utiliser Flexbox pour aligner les éléments */
+      align-items: center; /* Aligner verticalement les éléments */
+    }
+
+    /* Style des étiquettes des champs de formulaire */
+    label {
+      font-weight: bold; /* Texte en gras */
+    }
+
+    /* Style des champs de formulaire */
+    select,
+    input[type="text"],
+    button {
+      width: 100%; /* Largeur pleine */
+      padding: 10px; /* Remplissage intérieur */
+      margin-bottom: 15px; /* Marge basse */
+      box-sizing: border-box; /* Taille inclut les bordures et le remplissage */
+    }
+
+    /* Style des boutons */
+    button {
+      background-color: #5cb85c; /* Couleur de fond */
+      color: white; /* Couleur du texte */
+      border: none; /* Pas de bordure */
+      border-radius: 5px; /* Coins arrondis */
+      cursor: pointer; /* Curseur au survol */
+    }
+
+    /* Style du survol des boutons */
+    button:hover {
+      background-color: #45a049; /* Couleur de fond au survol */
+    }
+
+    /* Style de la notification */
+    .notification {
+      color: red; /* Couleur du texte */
+      font-style: italic; /* Texte en italique */
+      text-align: center; /* Centrage du texte */
+    }
+
+    /* Style de l'image de l'attestation */
+    .attestation img {
+      max-width: 100%; /* Largeur maximale de l'image */
+      height: auto; /* Hauteur automatique pour conserver les proportions */
+    }
+
+    /* Style du bouton de retour vers le haut */
+    .scroll-top-btn {
+      position: fixed; /* Position fixe */
+      bottom: 20px; /* Distance par rapport au bas */
+      right: 20px; /* Distance par rapport à droite */
+      background-color: #5cb85c; /* Couleur de fond */
+      color: white; /* Couleur du texte */
+      border: none; /* Pas de bordure */
+      border-radius: 50%; /* Coins arrondis */
+      width: 50px; /* Largeur */
+      height: 50px; /* Hauteur */
+      cursor: pointer; /* Curseur au survol */
+    }
+
+    /* Style du survol du bouton de retour vers le haut */
+    .scroll-top-btn:hover {
+      background-color: #45a049; /* Couleur de fond au survol */
+    }
+
+    /* Style de l'image à l'intérieur du bouton */
+    .scroll-top-btn img {
+      width: 100%; /* Ajustement de la largeur */
+      height: auto; /* Hauteur automatique pour conserver les proportions */
+    }
+
+    /* Style de la section "Choix du prix" */
+    #price-section {
+      margin-bottom: 20px; /* Ajoute une marge basse de 20 pixels */
+    }
+
+    /* Style du logo */
+    #logo {
+      height: 1.5em; /* Taille du logo basée sur la taille du texte */
+      margin-left: 10px; /* Marge à gauche pour séparer du titre */
+    }
+
+    /* Style du champ d'adresse du moyen de paiement */
+    #payment_address {
+      width: calc(100% - 20px); /* Largeur du champ moins la marge intérieure */
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5KNTG4G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="container">
+    <h1>Formulaire de Préinscription <img id="logo" src="InShot_20240319_134419112.png" alt="Logo de votre entreprise"></h1>
+    <form id="preinscription-form">
+      <!-- Vos champs de formulaire ici -->
+      <label for="session">À quelle session souhaitez-vous participer ?</label>
+      <select id="session" name="session" required>
+        <option value="session_du_Mardi_30_Avril">Du Mardi 30 Avril au Jeudi 02 Mai 2024</option>
+        <option value="session_du_Jeudi_02_Mai">Du Jeudi 02 Mai au Samedi 04 Mai 2024</option>
+      </select>
+
+      <div id="price-section">
+        <label>Choisissez votre prix :</label><br>
+        <div>
+          <input type="radio" id="prix_formation_attestation" name="price" value="Formation + Attestation (5.000 FCFA)" required>
+          <label for="prix_formation_attestation">Formation + Attestation (5.000 FCFA)</label><br>
+        </div>
+          <input type="radio" id="prix_formation_seule" name="price" value="Formation seule (3.000 FCFA)" checked required>
+          <label for="prix_formation_seule">Formation seule (3.000 FCFA)</label><br>
+        </div>
+        <div>
+      </div>
+
+      <label for="payment">Quel moyen de paiement souhaitez-vous utiliser ?</label>
+      <select id="payment" name="payment" required>
+        <option value="orange_money" selected>Orange Money</option>
+        <option value="wave">Wave</option>
+        <option value="moov_money">Moov Money</option>
+        <option value="moov_money_flooz">Moov Money Flooz</option>
+        <option value="mtn">MTN</option>
+        <option value="nita">Nita</option>
+      </select>
+
+      <!-- Champ d'adresse du moyen de paiement -->
+      <label for="payment_address">Adresse du moyen de paiement :</label>
+      <input type="text" id="payment_address" name="payment_address" value="+22657547436 (Wend Lassida Ismael Moise Compaore)" readonly required>
+
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+  
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+  
+      <label for="whatsapp">Numéro WhatsApp :</label>
+      <input type="text" id="whatsapp" name="whatsapp" placeholder="Votre numéro WhatsApp" required>
+
+      <label for="payment_number">Numéro utilisé pour le paiement :</label>
+      <input type="text" id="payment_number" name="payment_number" placeholder="Numéro de téléphone">
+
+      <button type="button" id="submit-btn">Envoyer sur WhatsApp</button>
+      <p id="notification" class="notification"><strong><em>Une capture d'écran de la confirmation du paiement est nécessaire pour valider l'inscription.</em></strong></p>
+    </form>
+
+    <!-- Programme de la formation -->
+    <div class="formation-program">
+      <h2>Programme de la formation</h2>
+      <p>
+        <strong>Jour 1 : Introduction à la Transformation des Fruits</strong><br>
+        - 🕒 20h00 : Accueil et Présentation<br>
+        - 🍎 Session 1 : Les Fondamentaux des Jus de Fruits<br>
+        - 🍇 Session 2 : Techniques d'Extraction et de Mélange<br>
+        - 🌳 Session 3 : Conservation des Fruits et Jus<br><br>
+
+        <strong>Jour 2 : Approfondissement des Techniques</strong><br>
+        - 🕒 20h00 : Session Récapitulative<br>
+        - 🍓 Session 4 : Confitures et Sirops<br>
+        - 🍊 Session 5 : Vinification de Fruits<br>
+        - 🍏 Session 6 : Techniques Avancées de Conservation<br><br>
+
+        <strong>Jour 3: Focus sur les Produits Laitiers</strong><br>
+        - 🕒 20h00 : Session Interactive<br>
+        - 🥛 Session 7 : Fabrication de Yaourts et Dèguè<br>
+        - 🍦 Session 8 : Gapal et Autres Produits Laitiers<br>
+        - 🌽 Session 9 : Conservation des Légumes et Jus de Légumes<br><br>
+
+        <strong>Conclusion et Remise des Attestations</strong><br>
+        - ⁉️ Questions et Réponses<br>
+        - 📜 Remise virtuelle des attestations<br><br>
+
+        Rejoignez-nous pour trois jours d'apprentissage intensif ! 🌱✨ Pour toute question ou ajustement, n'hésitez pas à nous contacter.
+      </p>
+    </div>
+
+    <!-- Texte "Attestation" -->
+    <h2>Attestation</h2>
+
+    <!-- Image de l'attestation -->
+    <div class="attestation">
+      <img src="1710850487671.png" alt="Attestation de formation">
+    </div>
+
+    <!-- Bouton de retour vers le haut -->
+    <button onclick="window.scrollTo(0, 0)" class="scroll-top-btn">
+      <img src="Vers le haut.png" alt="Flèche vers le haut">
+    </button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var paymentSelect = document.getElementById('payment');
+      var paymentAddressInput = document.getElementById('payment_address');
+      var paymentNumberInput = document.getElementById('payment_number');
+
+      // Par défaut, afficher l'adresse du moyen de paiement correspondant au premier moyen de paiement
+      paymentAddressInput.value = "+22657547436 (Wend Lassida Ismael Moise Compaore)";
+
+      // Mettre à jour l'adresse du moyen de paiement en fonction de la sélection
+      paymentSelect.addEventListener('change', function() {
+        switch (paymentSelect.value) {
+          case 'orange_money':
+            paymentAddressInput.value = "+22657547436 (Wend Lassida Ismael Moise Compaore)";
+            paymentNumberInput.placeholder = "Votre numéro Orange money";
+            break;
+          case 'wave':
+            paymentAddressInput.value = "226 57547436 (Wend Lassida Ismael Moise Compaoré)";
+            paymentNumberInput.placeholder = "Votre numéro Wave";
+            break;
+          case 'moov_money':
+            paymentAddressInput.value = "226 01368949 (Compaoré Moïse)";
+            paymentNumberInput.placeholder = "Votre numéro Moov Money";
+            break;
+          case 'moov_money_flooz':
+            paymentAddressInput.value = "226 01368949 (Moov Burkina, Compaoré Moïse)";
+            paymentNumberInput.placeholder = "Votre numéro Moov Money Flooz";
+            break;
+          case 'mtn':
+            paymentAddressInput.value = "226 57547436 (Orange Burkina, Wend Lassida Ismael Moise Compaoré)";
+            paymentNumberInput.placeholder = "Votre numéro MTN";
+            break;
+          case 'nita':
+            paymentAddressInput.value = "226 57547436 (Burkina Faso, Bobo-Dioulasso, Compaoré Moïse)";
+            paymentNumberInput.placeholder = "Votre numéro Nita";
+            break;
+          default:
+            paymentAddressInput.value = "Adresse par défaut";
+            paymentNumberInput.placeholder = "Numéro de téléphone";
+        }
+      });
+
+      var whatsappBtn = document.getElementById('submit-btn');
+      whatsappBtn.addEventListener('click', function() {
+        var session = document.getElementById('session').value;
+        var price = document.querySelector('input[name="price"]:checked').value;
+        var payment = document.getElementById('payment').value;
+        var paymentNumber = document.getElementById('payment_number').value;
+        var paymentAddress = document.getElementById('payment_address').value;
+        var nom = document.getElementById('nom').value;
+        var prenom = document.getElementById('prenom').value;
+        var whatsapp = document.getElementById('whatsapp').value;
+
+        // Vérification si tous les champs sont remplis sauf celui du numéro utilisé pour le paiement
+        if (session && price && payment && nom && prenom && whatsapp) {
+          var whatsappMessage = '*Session choisie* :\n' + session +
+                                '\n\n*Prix choisi* :\n' + price +
+                                '\n\n*Mode de paiement* :\n' + payment +
+                                '\n\n*Numéro de paiement* :\n' + paymentNumber +
+                                '\n\n*Adresse du moyen de paiement* :\n' + paymentAddress +
+                                '\n\n*Nom* :\n' + nom +
+                                '\n\n*Prénom* :\n' + prenom +
+                                '\n\n*Numéro WhatsApp* :\n' + whatsapp;
+
+          var whatsappLink = 'https://wa.me/22601368949?text=' + encodeURIComponent(whatsappMessage);
+          window.open(whatsappLink);
+        } else {
+          alert('Veuillez remplir tous les champs obligatoires.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
